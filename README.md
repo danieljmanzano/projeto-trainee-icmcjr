@@ -22,13 +22,13 @@ O dataset original (`dados.csv`) é uma base de dados de RH contendo diversas in
 
 O projeto foi dividido em três etapas principais, cada uma documentada em seu respectivo notebook:
 
-1.  **`main.ipynb`**: Limpeza e Pré-processamento dos Dados.
-2.  **`eda.ipynb`**: Análise Exploratória dos Dados (EDA).
-3.  **`modelagem.ipynb`**: Modelagem, Treinamento e Avaliação dos Modelos de Machine Learning.
+1.  **`01_preprocessamento.ipynb`**: Limpeza e Pré-processamento dos Dados.
+2.  **`02_eda.ipynb`**: Análise Exploratória dos Dados (EDA).
+3.  **`03_modelagem.ipynb`**: Modelagem, Treinamento e Avaliação dos Modelos de Machine Learning.
 
 ## Metodologia
 
-### 1. Limpeza e Pré-processamento (`main.ipynb`)
+### 1. Limpeza e Pré-processamento (`01_preprocessamento.ipynb`)
 
 Nesta etapa, o dataset `dados.csv` foi preparado para a análise. As principais ações incluíram:
 
@@ -41,7 +41,7 @@ Nesta etapa, o dataset `dados.csv` foi preparado para a análise. As principais 
 * **Padronização Textual:** Colunas de texto foram convertidas para minúsculas e tiveram espaços extras removidos.
 
 
-### 2. Análise Exploratória (EDA) (`eda.ipynb`)
+### 2. Análise Exploratória (EDA) (`02_eda.ipynb`)
 
 Com os dados limpos, foi realizada uma análise exploratória para extrair insights e entender a relação das variáveis com a variável alvo (`Attrition`). Principais descobertas:
 
@@ -50,7 +50,7 @@ Com os dados limpos, foi realizada uma análise exploratória para extrair insig
 * **Relação com Departamento (Department):** A análise mostrou que o departamento de **Vendas (Sales)** possui a maior taxa de attrition (cerca de 21%), enquanto **Pesquisa e Desenvolvimento (R&D)** possui a menor (13.8%).
 * **Matriz de Correlação:** Foi gerado um heatmap e um gráfico de barras utilizando o Coeficiente de Correlação de Pearson para visualizar a relação linear de todas as variáveis com o `Attrition`.
 
-### 3. Modelagem e Avaliação (`modelagem.ipynb`)
+### 3. Modelagem e Avaliação (`03_modelagem.ipynb`)
 
 Na etapa final, os dados foram preparados para a modelagem e dois algoritmos foram treinados e avaliados:
 
